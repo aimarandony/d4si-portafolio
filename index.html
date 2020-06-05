@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D4SI</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8719a7912f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="logo">
+        <img src="img/logo.svg" alt="Logo D4SI" />
+      </div>
+      <ul>
+        <li>
+          <a href="#">Inicio</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="#">¿Quiénes Somos?</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="#">Portafolio</a>
+          <span></span>
+        </li>
+        <li>
+          <a href="#">Contáctanos</a>
+          <span></span>
+        </li>
+      </ul>
+      <span class="hamburguer" id="hamburguer">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </nav>
+    <div class="home">
+      <div class="card card-v">
+        <img src="img/img-01.png" alt="Img 01"/><span>D<span>Developing</span></span>
+      </div>
+      <div class="card">
+        <img src="img/img-02.png" alt="Img 01"/><span>4<span>Amazing</span</span>
+      </div>
+      <div class="card">
+        <img src="img/img-03.png" alt="Img 01"/><span>S<span>System</span</span>
+      </div>
+      <div class="card">
+        <img src="img/img-04.png" alt="Img 01"/><span>I<span>Innovation</span</span>
+      </div>
+
+      <div class="redes tag-home">
+        <span><i class="fab fa-facebook-square"></i></span>
+        <span><i class="fab fa-youtube"></i></span>
+        <span><i class="fab fa-discord"></i></span>
+        <span><i class="fab fa-github"></i></span>
+        <span><i class="fab fa-twitter"></i></span>
+        <span></span>
+      </div>
+      <div class="gmail tag-home">
+        <span>d4sicompany@gmail.com</span>
+        <span></span>
+      </div>
+    </div>
+
+    <script>
+      let hamburguer = document.getElementById('hamburguer');
+      let nav = document.getElementById('nav');
+
+      hamburguer.addEventListener('click', ()=> {
+        nav.classList.toggle('wrapper');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  background: #111;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+nav .logo {
+  width: 40px;
+  transition: all 0.3s ease-in;
+}
+nav .logo img {
+  width: 100%;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 0 20px;
+  color: rgba(255, 255, 255, 0.664);
+  font-weight: 500;
+}
+nav ul li a:hover + span {
+  opacity: 1;
+}
+nav ul li span {
+  position: absolute;
+  background: #c3013b;
+  width: 100%;
+  height: 8px;
+  top: 45%;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.3s ease-out;
+}
+.home {
+  position: relative;
+  margin-top: 140px;
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .card {
+  width: 18%;
+  background-color: #c3013b;
+  position: relative;
+}
+.home .card:hover > img {
+  opacity: 0.9;
+}
+.home .card:hover > span {
+  font-size: 1px;
+}
+.home .card:hover > span span {
+  opacity: 1;
+}
+.home .card img {
+  width: 100%;
+  opacity: 0.3;
+  transition: all 0.3s ease-in;
+}
+
+.home .card:first-child {
+  transform: translate(60px, -40px);
+}
+.home .card:nth-child(2) {
+  transform: translate(30px, 20px);
+}
+.home .card:nth-child(3) {
+  transform: translate(-30px, -40px);
+}
+.home .card:nth-child(4) {
+  transform: translate(-60px, 20px);
+}
+.home .card span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 180px;
+  color: rgba(255, 255, 255, 0.733);
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  transition: all 0.3s ease-in;
+}
+.home .card span span {
+  font-size: 2rem;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.home .tag-home {
+  position: absolute;
+  bottom: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+}
+.home .tag-home span:last-child {
+  display: block;
+  width: 2px;
+  height: 100px;
+  background: #ffffff60;
+  margin-top: 5px;
+}
+.home .redes {
+  left: 0;
+}
+.home .redes span i {
+  color: #ffffff60;
+  font-size: 20px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in;
+}
+.home .redes span i:hover {
+  color: rgba(255, 255, 255, 0.911);
+}
+.home .gmail {
+  right: 0;
+}
+.home .gmail span:first-child {
+  writing-mode: vertical-lr;
+  color: #ffffff60;
+  margin: 5px 0;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.home .gmail span:first-child:hover {
+  color: rgba(255, 255, 255, 0.911);
+}
+.hamburguer {
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    opacity: 0;
+  }
+  .home .card:not(.card-v) {
+    display: none;
+  }
+  nav.wrapper .logo {
+    position: absolute;
+    z-index: 20;
+  }
+  nav.wrapper ul {
+    background: #000;
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+  }
+  nav.wrapper ul li {
+    margin: 20px 0;
+  }
+  nav.wrapper ul li a:hover + span {
+    opacity: 1;
+  }
+  nav.wrapper ul li a {
+    display: block;
+    z-index: 12;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  nav.wrapper ul li span {
+    z-index: 12;
+  }
+  nav .hamburguer {
+    display: block;
+    right: 40px;
+    cursor: pointer;
+    z-index: 20;
+  }
+  nav .hamburguer i {
+    display: block;
+    width: 40px;
+    height: 5px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.712);
+    transition: all 0.3s ease-in;
+  }
+  nav .hamburguer i:nth-child(2) {
+    margin-left: 10px;
+  }
+  nav.wrapper .hamburguer i:nth-child(2) {
+    margin-left: 0px;
+  }
+
+  .home .card:nth-child(1) {
+    width: 40%;
+    transform: translate(10px, 0px);
+  }
+}
+
+@media (max-width: 600px) {
+  .home .tag-home {
+    display: none;
+  }
+  .home .card:nth-child(1) {
+    width: 60%;
+    transform: translate(10px, 0px);
+  }
+}
