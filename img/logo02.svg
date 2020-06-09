@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="83.344" height="104.18" viewBox="0 0 83.344 104.18">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1.083" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff5f40"/>
+      <stop offset="0.285" stop-color="#ee3642"/>
+      <stop offset="0.724" stop-color="#da1e42"/>
+      <stop offset="1" stop-color="#c30142"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff5f40"/>
+      <stop offset="0.309" stop-color="#ee3642"/>
+      <stop offset="0.669" stop-color="#da1e42"/>
+      <stop offset="1" stop-color="#c30142"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_7" data-name="Grupo 7" transform="translate(-72 -46.316)">
+    <path id="Trazado_49" data-name="Trazado 49" d="M0,0,20.836,13.024v7.812H0Z" transform="translate(72 46.316)" fill="#ff5f40"/>
+    <path id="Trazado_50" data-name="Trazado 50" d="M0,0H20.836V67.717L0,80.739Z" transform="translate(72 69.756)" fill="url(#linear-gradient)"/>
+    <path id="Unión_8" data-name="Unión 8" d="M0,53.352l26.106-15.9L0,22.1V0L59.9,37.725,44.3,48.13l0,0L0,75.449Z" transform="translate(95.44 60.681)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>
